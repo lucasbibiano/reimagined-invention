@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/stupid_inventions', to: 'inventions#get_all_stupid_inventions'
+  get '/random_stupid_invention', to: 'inventions#get_one_random_stupid_invention'
 end
